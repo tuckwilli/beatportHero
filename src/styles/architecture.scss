@@ -1,0 +1,25 @@
+.main-content-container {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding: 85px 0 35px;
+
+	@media screen and (min-width: 768px){
+		padding: 85px 30px 35px;
+
+		&--2-col-focus-left {
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-column-gap: 40px;
+		}
+	}
+}
+
+.sub-content-container {
+	@media screen and (min-width: 1150px){
+		&--2-col-focus-left {
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-column-gap: 10px;
+		}
+	}
+}

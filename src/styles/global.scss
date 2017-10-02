@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+body {
+	background: $background-primary;
+	color: $font-primary;
+	font-size: 1.25em;
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+h1 {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: $font-primary;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	white-space: nowrap;
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	border: 0;
+}

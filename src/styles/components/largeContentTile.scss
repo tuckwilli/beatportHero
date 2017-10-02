@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.large-content-tile {
+	overflow: hidden;
+	
+	&__img {
+		width: 100%;
+		display: block;
+	}
+	
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		background: $overlay-primary;
+		width: 100%;
+		padding: 12px;
+		box-sizing: border-box;
+		transform: translate3d(0, 100%, 0);
+		transition: transform .25s;
+	}
+	
+	&__header {
+		margin: 0 0 2px;
+		font-size: 1rem;
+
+		@media screen and (min-width: 768px) {
+			font-size: 1.5rem;
+		}
+	}
+	
+	&__meta-link {
+		font-size: .75rem;
+
+		@media screen and (min-width: 768px) {
+			font-size: 1rem;
+		}
+	}
+	
+	&__meta-link--grey-pipe {
+		color: $font-muted;
+		border-left: 2px solid $font-muted;
+		padding-left: 7px;
+		margin-left: 7px;
+	}
+	
+	&__actions {
+		margin-top: 9px;
+	}
+}

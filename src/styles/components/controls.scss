@@ -1,0 +1,100 @@
+@import '../variables.scss';
+
+.play-btn,
+.playlist-btn,
+.cart-btn,
+.cart-dropdown {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	transition: background-color .2s;
+}
+
+.play-btn,
+.playlist-btn {
+	width: 37px;
+	height: 37px;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
+.play-btn {
+	background: $control-background-primary;
+	border-radius: 5px 0 0 5px;
+	
+	&:hover {
+		background: $control-background-primary-hover;
+	}
+	
+	&:before {
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 15px solid $font-primary;
+		width: 0;
+		height: 0;
+	}
+}
+
+.playlist-btn {
+	border-radius: 0 5px 5px 0;
+	background: $control-background-secondary;
+	
+	&:hover {
+		background: $control-background-secondary-hover;
+	}
+	
+	&:before {
+		background: $font-primary;
+		height: 3px;
+		width: 50%;
+		box-shadow: 0 -7px $font-primary, 0 7px $font-primary;
+	}
+}
+
+.cart-btn {
+	text-decoration: none;
+	background: $cta-primary;
+	border-radius: 3px 0 0 3px;
+	padding: 6px 8px;
+	font-size: .75rem;
+	font-weight: bold;
+	margin-left: 20px;
+	height: 26px;
+	box-sizing: border-box;
+	
+	&:hover {
+		background: $cta-primary-hover;
+		text-decoration: none;
+	}
+}
+
+.cart-dropdown {
+	background: $cta-secondary;
+	width: 22px;
+	height: 26px;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	
+	&:hover {
+		background: $cta-secondary-hover;
+	}
+	
+	&:before {
+		content: '∨';
+		position: absolute;
+		text-align: center;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: scale3d(1,.5,1);
+	}
+}
