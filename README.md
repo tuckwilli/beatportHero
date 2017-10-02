@@ -1,9 +1,9 @@
 # Installing
 
-*Run "npm install" in the root directory.
-*Run "npm run build" to start the webpack watch process if desired
-*Run "npm run proxy" to start the CORS proxy
-*The express server will be on localhost:3000
+* Run "npm install" in the root directory.
+* Run "npm run build" to start the webpack watch process if desired
+* Run "npm run proxy" to start the CORS proxy
+* The express server will be on localhost:3000
 
 # Overview
 
