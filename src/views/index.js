@@ -81,7 +81,7 @@ class index extends React.Component {
 						</PagedList>
 					</div>
 				</section>
-				<section className="hide-fpo-mobile">Top Ten FPO</section>
+				<section className="hide-fpo-mobile"><h2 className="fpo-header">Top Ten FPO</h2></section>
 			</main>,
 			<FooterFPO key="2" />
 		];
