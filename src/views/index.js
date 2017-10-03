@@ -62,9 +62,7 @@ class index extends React.Component {
 					<div className="sub-content-container--2-col-focus-left">
 						<PagedList title="New On Beatport" tracksLoaded={this.state.loaded} crossfade={true} autoScroll={true}>
 							{ this.state.trackData.map((data, index) => {
-								let artists = data.artists.map(artist => artist.name);
-
-								return <LargeContentTile trackId={data.id} slug={data.slug} imgUrl={data.images.large.url} release={data.title} artist={artists.join(', ')}  label={data.label.name} price={data.price.display} key={index} />;
+								return <LargeContentTile data={data} key={index} />;
 							})}
 						</PagedList>
 						<PagedList classMod="hide-fpo-tablet" title="DJ Charts FPO" tracksLoaded={false} crossfade={false} autoScroll={false}>
