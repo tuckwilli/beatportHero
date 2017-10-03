@@ -22,7 +22,7 @@ class pagedList extends React.Component {
 	}
 
 	componentDidMount() {
-		if(this.props.autoscroll) {
+		if(this.props.autoScroll) {
 			this.autoScrollId = setInterval(() => {
 				if(this.props.tracksLoaded) this.incrementSlide(1);
 			}, 5000);
