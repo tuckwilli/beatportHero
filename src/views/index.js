@@ -60,7 +60,7 @@ class index extends React.Component {
 			<main key="1" className="main-content-container main-content-container--2-col-focus-left">
 				<section>
 					<div className="sub-content-container--2-col-focus-left">
-						<PagedList title="New On Beatport" tracksLoaded={this.state.loaded} crossfade={true} autoScroll={false}>
+						<PagedList title="New On Beatport" tracksLoaded={this.state.loaded} crossfade={true} autoScroll={true}>
 							{ this.state.trackData.map((data, index) => {
 								let artists = data.artists.map(artist => artist.name);
 
